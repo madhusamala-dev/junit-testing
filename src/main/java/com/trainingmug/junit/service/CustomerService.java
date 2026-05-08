@@ -14,6 +14,8 @@ public class CustomerService {
     }
 
     public Customer addCustomer(Customer customer) {
+
+
         boolean exists = customers.stream()
                 .anyMatch(c -> c.getId() == customer.getId());
 
